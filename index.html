@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #444 20%, purple 100%);
+            background-repeat: no-repeat;
+            background-position: fixed;
+            background-size: cover;
+            font-family: arial;
+            display: flex;
+            justify-content: left;
+            min-height: 96vh;
+            text-shadow:
+                -4px -4px 0 #000,
+                4px -4px 0 #000,
+                -4px 4px 0 #000,
+                4px 4px 0 #000,
+                -4px 0px 0 #000,
+                4px 0px 0 #000,
+                0px -4px 0 #000,
+                0px 4px 0 #000;
+        }
+
+        .cols {
+            margin: 10px 0 0 10px;
+            min-width: 18%;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-top: 40px;
+            color: red;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: red;
+            margin: 40px 0 0 0;
+        }
+
+        a,
+        u {
+            font-size: 26px;
+            margin: 10px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 30px;
+            width: 100%;
+        }
+
+        u {
+            text-decoration: underline;
+        }
+
+        hr {
+            width: 100%;
+            background-color: black;
+            height: 15px;
+        }
+
+        span {
+            display: flex;
+            gap: 80px;
+        }
+
+        span a {
+            position: absolute;
+        }
+
+        span a:nth-child(1) {
+            left: 900px;
+        }
+
+        span a:nth-child(2) {
+            left: 1100px;
+        }
+
+        .strike {
+            text-decoration: line-through;
+            text-decoration-color: red;
+            text-decoration-thickness: 2px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="cols">
+        <h1>SHORTS</h1>
+        <a href="Cards Short/FIFA/Chelsea Years/index.html">Chelsea Years</a>
+        <a href="Cards Short/NHL/2000-/index.html">2000 NHL</a>
+        <a href="Cards Short/NBA/Lakers/index.html">LA Lakers</a>
+    </div>
+    <div class="cols">
+        <h1>FIFA</h1>
+        <a href="FIFA/Teams Short/Chelsea 2005-2025/index.html">Chelsea 2005-2025</a>
+        <a href="FIFA/Teams Short/Best Players Mid Season/index.html">Best Players Mid Season</a>
+        <a href="FIFA/Teams Short/Top Teams Jan 1st 2026/index.html">Top Teams Jan 1st 2026</a>
+    </div>
+    <div class="cols">
+        <h1>NHL</h1>
+        <a href="NHL/Teams Short/NHL Best Jan 1st/index.html">NHL Best Jan 1st Short</a>
+        <a href="NHL/Teams Short/Team USA/index.html">Team USA 2026</a>
+        <a href="NHL/Teams Short/NHL Best Pts Jan 1st/index.html">NHL Top Pts Jan 1st</a>
+    </div>
+    <div class="cols">
+        <h1>NBA</h1>
+        <a href="NBA/Teams Short/NBA Jan 1st 2026/index.html">NBA Jan 1st 2026</a>
+        <a href="NBA/Teams Short/NBA PPG Jan 1st 2026/index.html">NBA PPG Jan 1st 2026</a>
+
+    </div>
+    <div class="cols">
+        <h1>OTHERS</h1>
+    </div>
+    <script>
+        const allCols = document.querySelectorAll('.cols');
+
+    </script>
+</body>
+
+</html>

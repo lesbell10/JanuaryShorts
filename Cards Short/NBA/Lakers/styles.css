@@ -1,0 +1,200 @@
+:root {    
+    --text-shadow: 
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --border-color: rgba(255, 255, 255, 0.3);
+    --neon-orange: darkorange;
+}
+
+/* Global Styles */
+*, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+        color: white !important;
+        text-shadow: var(--text-shadow);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1f1f1f 0%, #0d0d0d 100%);
+    color: white;
+    overflow: hidden;
+}
+
+/* Select Dropdown */
+select {
+    padding: 12px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 14px;
+    border: 3px solid var(--neon-orange);
+    width: 90%;
+    box-shadow: 0 0 50px var(--neon-orange);
+    margin-top: -10px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    z-index: 100;
+    background-color: transparent; 
+    color: white;
+    margin-top: -5px;
+    text-shadow: var(--text-shadow);
+}
+
+select:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+option {
+    font-weight: bold;
+    background-color: black;
+    color: darkorange;
+}
+
+/* Titles & Labels */
+.title {
+    font-size: 40px;
+    margin: 0px 0 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: var(--text-shadow);
+
+}
+
+.message {
+    position: absolute;
+    font-size: 24px;
+    top: 220px;
+    left:710px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Side Profile Picture */
+.sidepic {
+    position: absolute;
+    top: 24%;
+    right: 37%;
+    object-fit: cover;
+    width: 175px;
+    border-radius: 10px;
+    /* border: 4px solid var(--neon-orange); */
+    /* box-shadow: 0 0 20px var(--neon-orange); */
+    transition: 0.3s;
+}
+
+.carousel {
+    position: relative;
+    width: 260%;
+    min-height: 117%;
+    margin-left: -70px;
+    margin-top: -345px;
+}
+
+.carousel p {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 7px;
+    border-radius: 7px;
+    text-shadow: var(--text-shadow);
+    color: white;
+}
+
+.carousel img {
+    height: 167.27px;
+    width: 112.74px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 3px solid black;
+    box-shadow: 0px 0px 25px 0px black;
+    object-fit: cover;
+}
+
+/* Short Section */
+.short {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 100vh;
+    margin: 0 auto;
+    background: linear-gradient(135deg, grey 20%, darkorange 100%);
+    padding: 20px;
+}
+
+/* Positioning for Players */
+#PG, #PG2, #SG, #SG2, #SF, #SF2, 
+#PF, #PF2, #C, #C2 {
+    position: absolute;
+}
+
+#PG { left: 46%; top: 47%; }
+#PG2 { left: 46%; top: 33.5%; }
+#SG { left: 34.5%; top: 56%; }
+#SG2 { left: 34.5%; top: 42.5%; }
+#SF {  top: 76%; width: 150%;}
+#SF2 { left: 57%; top: 62.5%; }
+#PF { left: 36.5%; top: 80%; }
+#PF2 { left: 36.5%; top: 66.5%; }
+#C { left: 47%; top: 70%; }
+#C2 { left: 47%; top: 56.5%; }
+
+/* X Position */
+#x-position {
+    position: absolute;
+    bottom: 600px;
+    left:180px;
+    font-size: 40px;
+    z-index: 10;
+    color: white;
+    font-weight: bold;
+}
+#PG3 {
+    position: absolute;
+    left: 45.5%; /* Decreased by 4% */
+    top: 30%;
+}
+
+#SG3 {
+    position: absolute;
+    left: 34%; /* Decreased by 4% */
+    top: 39%;
+}
+
+#SF3 {
+    position: absolute;
+    left: 56.5%; /* Decreased by 4% */
+    top: 59%;
+}   
+
+#PF3 {
+    position: absolute;
+    left: 36%; /* Decreased by 4% */
+    top: 63%;
+}  
+
+#C3 {
+    position: absolute;
+    left: 46.5%; /* Decreased by 4% */
+    top: 53%;
+}
+
+h4  {
+    font-size: 30px;
+    width: 100%;
+    color: black;
+    /* text-shadow: var(--text-shadow); */
+}

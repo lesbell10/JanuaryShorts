@@ -1,0 +1,7 @@
+.playerInfo {
+        min-width: 62%;
+}
+
+select, .playerInfo img.playerImage, .stats {
+        min-width: 95%;
+}
